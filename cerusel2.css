@@ -1,0 +1,217 @@
+body{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/*carusel*/
+
+.button{
+	background-color: #2754eb;
+	width: 165px;
+	height: 42px;
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 11px;
+	margin: 55px 0 60px 0;
+	float: left;
+}
+
+.subtitle{
+	font-family: 'Crimson Text', serif;
+	font-size: 17px;
+	text-align: left;
+	line-height: 23px;
+		margin-top: 20px;
+
+}
+
+.title{
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 42px;
+	letter-spacing: -2px;
+	text-align: left;
+	line-height: 50px;
+}
+
+
+
+.carousel-control{
+	border: 2px solid #494a4e;
+	height: 42px;
+	width: 42px;
+	border-radius: 50%;
+	top:46%;
+	background: none !important; 
+	filter: progid:none !important;
+
+}
+
+
+
+.carousel-indicators li{
+	width: 8px;
+	height: 8px;
+	border:2px solid #8e8f91;
+}
+
+.carousel-indicators .active{
+	width: 8px;
+	height: 8px;
+	background-color: #e8e9e9;
+	border:1px solid #e8e9e9;
+}
+
+.item img{
+width: 100%;
+}
+
+
+.right{
+	margin-right: 11%;
+}
+.left{
+	margin-left: 11%;
+}
+
+.carousel-inner,.carousel,.item {
+  height:100%;
+  width:100%;
+}
+
+.carousel-inner .item,
+.carousel-inner .item.active,
+.carousel-inner .item img {
+    margin: auto;
+    padding: 0px;
+}
+
+
+.carousel-caption{
+margin-left: -5%; 
+padding-right: 0px;
+}
+/*carusel end*/
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+
+
+.button{
+	margin: 10px 0 0 0;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+	.button{
+	width: auto;
+	height: auto;
+	padding:10px 30px 10px 30px;
+	margin: 0 0 0 0;
+}
+
+.subtitle{
+	font-size: 16px;
+	line-height: 20px;
+		margin-top: 0px;
+
+}
+
+.title{
+	line-height: 40px;
+	font-size: 25px;
+
+	}
+
+	.carousel-caption{
+margin-left: 0px; 
+}
+
+.title br{
+	display: none;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.subtitle{
+	display: none;
+}
+
+.title{
+	line-height: 30px;
+	font-size: 20px;
+
+	}
+
+	.carousel-caption{
+margin-left: 20px; 
+}
+
+.carousel-control{
+	
+	height: 32px;
+	width: 32px;
+}
+.carousel-control img{
+	height: 28px;
+	margin-top: -5px;
+}
+
+	}
+
+
+@media screen and (max-width: 480px) {
+
+
+
+.title{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	}
+
+	.carousel-caption{
+margin-left: 10px; 
+}
+
+.carousel-control{
+	border: 1px solid #494a4e;
+	height: 22px;
+	width: 22px;
+}
+.carousel-control img{
+	height: 18px;
+	margin-top: -11px;
+}
+
+.left{
+	margin-left: 2%;
+}
+
+.right{
+		margin-right: 2%;
+
+}
+.button{
+		padding:5px 15px 5px 15px;
+
+}
+
+ol.carousel-indicators{
+	margin-bottom: -10px;
+}
+
+div.carousel-caption{
+	padding-bottom: 5px;
+}
+
+}

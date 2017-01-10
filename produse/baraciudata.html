@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+  <div id="sidenav">
+	            <div id="sidebar-trigger" onclick="openNav()">
+	            </div>
+
+	   		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+	   		    </a>
+
+	  			<div class="background-options">
+	  					<div id="products-dropdown">
+						    <ul id="accordion" class="accordion">
+  								<li>
+    								<div class="link">Top Sales
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    				        		</ul>
+  								</li>
+  								<li>
+    								<div class="link">Brand Focus
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Hi-Tech
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">Cell Phones</a></li>
+      									<li><a href="#">Cameras</a></li>
+      									<li><a href="#">Computers</a></li>
+      									<li><a href="#">TV, Audio</a></li>
+      									<li><a href="#">Video Games</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Home
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Sale
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu border-bottom-radius">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li class="border-bottom-radius"><a href="#">...</a></li>
+    								</ul>
+  								</li>
+							</ul>
+				        </div>	
+	  		    </div>
+
+	  			<div class="background-options table-responsive" id="available">
+	  					<table class="table without-border">
+	  						<tbody>
+	  							<tr>
+	  								<td colspan=2 id="padding-ab" class="avail-headers">Available</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddinga1">
+	  									<div><input type="radio" id="a1" name="available"/>
+						                <label for="a1"><span></span>In Storage</label></div>
+	  								</td>
+	  								<td id="paddinga1a" class="avail-values">45</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddinga2">
+	  									<div><input type="radio" id="a2" name="available"/>
+						                <label for="a2"><span></span>In Online-Shop</label></div>
+	  								</td>
+	  								<td id="paddinga2a" class="avail-values">12</td>
+	  							</tr>
+	  							<tr>
+	  								
+	  									<td id="padding-aba" class="avail-headers btop">Brands</td>
+	  									<td id="padding-abab" class="avail-headers btop"><a href="#">All</a></td>
+	  								
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr2">
+										<div>
+	  										<input type="checkbox" id="br2" name="conditions"/>
+						        			<label for="br2"><span></span>Apple</label>
+						        		</div>
+	  								</td>
+	  								<td id="paddingbr2a" class="avail-values">32</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr3">
+										<div>
+	  										<input type="checkbox" id="br3" name="conditions"/>
+						        			<label for="br3"><span></span>JBL</label>
+						        		</div>
+	  								</td>
+	  								<td  id="paddingbr3a" class="avail-values">14</td>
+	  							</tr>
+	  							<tr>
+	  						
+	  								<td  id="paddingbr4">
+										<div>
+	  										<input type="checkbox" id="br4" name="conditions"/>
+						        			<label for="br4"><span></span>Bose</label>
+						       		 </div>
+	  								</td>
+	  								<td id="paddingbr4a" class="avail-values">3</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr5">
+										<div>
+	  										<input type="checkbox" id="br5" name="conditions"/>
+						        			<label for="br5"><span></span>Nest</label>
+						        		</div>
+	  								</td>
+	  								<td id="paddingbr5a" class="avail-values">5</td>
+	  							</tr>
+	  							
+	  						</tbody>
+	  					</table>
+	  			</div>
+	  			  		  			
+	  			<div class="background-options">
+	  					<ul class="condition-checkboxes">
+	  						<li>
+	  							<div id="conditions">
+	  								<b>Conditions</b> <a class="see-all" href="#"><b>See All</b></a>
+	  							</div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co1" name="conditions"/>
+						        	<label for="co1"><span></span>New</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co2" name="conditions"/>
+						        	<label for="co2"><span></span>Manufacturer Refurbished</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co3" name="conditions"/>
+						        	<label for="co3"><span></span>Seller Refurbished</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co4" name="conditions"/>
+						        	<label for="co4"><span></span>Used</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co5" name="conditions"/>
+						        	<label for="co5"><span></span>For Parts or not Working</label>
+						        </div>
+	  						</li>
+	  					</ul>
+	  			</div>
+	  				  			
+	  			<div class="background-options table-responsive">
+	  					<table class="table delivery">
+	  						<thead>
+	  							<tr>
+	  								<th colspan="2">Delivery options</th>
+	  							</tr>
+	  						</thead>
+	  						<tbody>
+	  							<tr>
+	  								<td id="cell-border">
+	  									<div><input type="radio" id="d1" name="delivery"/>
+						                <label for="d1"><span></span>Free</label></div>
+	  								</td>
+	  								<td>
+	  									<div><input type="radio" id="d2" name="delivery"/>
+						                <label for="d2"><span></span>$4.99</label></div>
+	  								</td>
+	  							</tr>
+	  						</tbody>
+	  					</table>
+	  			</div>
+	
+</div>
+
+
+<div class="container">
+	<div class="row">
+	  <div id="left-col" class="col-lg-3 col-md-4">
+	  		<div class="row">
+	  			<div class="col-md-12 ">
+	  				<div class="background-options">
+	  					<div id="products-dropdown2">
+						    <ul id="accordion2" class="accordion">
+  								<li>
+    								<div class="link">Top Sales
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    				        		</ul>
+  								</li>
+  								<li>
+    								<div class="link">Brand Focus
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Hi-Tech
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">Cell Phones</a></li>
+      									<li><a href="#">Cameras</a></li>
+      									<li><a href="#">Computers</a></li>
+      									<li><a href="#">TV, Audio</a></li>
+      									<li><a href="#">Video Games</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Home
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+    								</ul>
+  								</li>
+  								<li>
+    								<div class="link">Sale
+    									<i class="fa fa-chevron-right"></i>
+    								</div>
+    								<ul class="submenu border-bottom-radius">
+      									<li><a href="#">...</a></li>
+      									<li><a href="#">...</a></li>
+      									<li class="border-bottom-radius"><a href="#">...</a></li>
+    								</ul>
+  								</li>
+							</ul>
+						</div>
+	  				</div>
+	  			</div>	
+	  		
+
+	  			<div class="col-md-12">
+	  				<div class="background-options table-responsive" id="available2">
+	  					<table class="table without-border">
+	  						<tbody>
+	  							<tr>
+	  								<td colspan=2 id="padding-ab2" class="avail-headers">Available</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddinga12">
+	  									<div><input type="radio" id="a12" name="available"/>
+						                <label for="a12"><span></span>In Storage</label></div>
+	  								</td>
+	  								<td id="paddinga1a2" class="avail-values">45</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddinga22">
+	  									<div><input type="radio" id="a22" name="available"/>
+						                <label for="a22"><span></span>In Online-Shop</label></div>
+	  								</td>
+	  								<td id="paddinga2a2" class="avail-values">12</td>
+	  							</tr>
+	  							<tr>
+	  								
+	  									<td id="padding-aba2" class="avail-headers btop">Brands</td>
+	  									<td id="padding-abab2" class="avail-headers btop"><a href="#">All</a></td>
+	  								
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr22">
+										<div>
+	  										<input type="checkbox" id="br22" name="conditions"/>
+						        			<label for="br22"><span></span>Apple</label>
+						        		</div>
+	  								</td>
+	  								<td id="paddingbr2a2" class="avail-values">32</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr32">
+										<div>
+	  										<input type="checkbox" id="br32" name="conditions"/>
+						        			<label for="br32"><span></span>JBL</label>
+						        		</div>
+	  								</td>
+	  								<td  id="paddingbr3a2" class="avail-values">14</td>
+	  							</tr>
+	  							<tr>
+	  						
+	  								<td  id="paddingbr42">
+										<div>
+	  										<input type="checkbox" id="br42" name="conditions"/>
+						        			<label for="br42"><span></span>Bose</label>
+						       		 </div>
+	  								</td>
+	  								<td id="paddingbr4a2" class="avail-values">3</td>
+	  							</tr>
+	  							<tr>
+	  								<td id="paddingbr52">
+										<div>
+	  										<input type="checkbox" id="br52" name="conditions"/>
+						        			<label for="br52"><span></span>Nest</label>
+						        		</div>
+	  								</td>
+	  								<td id="paddingbr5a2" class="avail-values">5</td>
+	  							</tr>
+	  							
+	  						</tbody>
+	  					</table>
+	  				</div>
+	  			</div>	
+	  		
+
+	  			<div class="col-md-12">
+	  				<div class="background-options">
+	  					<ul class="condition-checkboxes">
+	  						<li>
+	  							<div id="conditions2">
+	  								<b>Conditions</b> <a class="see-all" href="#"><b>See All</b></a>
+	  							</div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co12" name="conditions"/>
+						        	<label for="co12"><span></span>New</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co22" name="conditions"/>
+						        	<label for="co22"><span></span>Manufacturer Refurbished</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co32" name="conditions"/>
+						        	<label for="co32"><span></span>Seller Refurbished</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co42" name="conditions"/>
+						        	<label for="co42"><span></span>Used</label>
+						        </div>
+	  						</li>
+	  						<li>
+	  							<div>
+	  								<input type="checkbox" id="co52" name="conditions"/>
+						        	<label for="co52"><span></span>For Parts or not Working</label>
+						        </div>
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>	
+
+
+	  			<div class="col-md-12">
+	  				<div class="background-options table-responsive">
+	  					<table class="table delivery">
+	  						<thead>
+	  							<tr>
+	  								<th colspan="2">Delivery options</th>
+	  							</tr>
+	  						</thead>
+	  						<tbody>
+	  							<tr>
+	  								<td id="cell-border2">
+	  									<div><input type="radio" id="d12" name="delivery"/>
+						                <label for="d12"><span></span>Free</label></div>
+	  								</td>
+	  								<td>
+	  									<div><input type="radio" id="d22" name="delivery"/>
+						                <label for="d22"><span></span>$4.99</label></div>
+	  								</td>
+	  							</tr>
+	  						</tbody>
+	  					</table>
+	  				</div>
+	  			</div>	
+	  		</div>
+	  </div>
+
+	 
+
+	  <div class="col-lg-9 col-sm-12 col-md-8">
+	  		<div class="row ">
+	  			<div class="col-md-6 col-sm-4 col-lg-4" >
+	  				<div class="background-product extra-padding">
+	  					<img src="screenshots/product1.jpg" class="img-responsive center-block"/>
+	  					<p class="product-name">Apple TV 32GB</p>
+	  					<p class="product-color">BLACK</p>
+	  					<p class="product-price">$49.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product extra-padding">
+	  					<img src="screenshots/product2.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Pebble Time</p>
+	  					<p class="product-color">RED</p>
+	  					<p class="product-price">$29.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product extra-padding">
+	  					<img src="screenshots/product3.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Zendure 4-Port USB</p>
+	  					<p class="product-color">WHITE</p>
+	  					<p class="product-price">$49.99</p>
+	  				</div>
+	  			</div>
+	  	
+
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product">
+	  					<img src="screenshots/product4.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Withings Smart Body Analyzer ws-50</p>
+	  					<p class="product-color">BLACK</p>
+	  					<p class="product-price">$39.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-12 col-sm-8 col-lg-8">
+	  				<div id="jblposition" class="background-productjbl">
+	  					<img src="screenshots/product5.jpg" id="imgjbl" class="img-responsive center-block" />
+	  					<div id="jblabsolute">
+	  						<p>$39.99</p>
+	  					</div>
+	  					<div>
+	  					<div id="jbl-float">	
+	  						<p class="product-namejbl">JBL Charge 2+</p>
+	  						<p class="product-colorjbl">BLACK</p>
+	  					</div>
+	  					<div class="double-button" >
+  							<button type="button" class="first-button">16 GB</button>
+  							<button type="button" class="second-button">Buy now</button>
+						</div>
+						</div>
+
+	  					
+	  				</div>
+	  			</div>
+	  
+
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product extra-padding">
+	  					<img src="screenshots/product6.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Ollo Clip New</p>
+	  					<p class="product-color">SILVER</p>
+	  					<p class="product-price">$19.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product">
+	  					<img src="screenshots/product7.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+	  					<p class="product-color">BLACK</p>
+	  					<p class="product-price">$19.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product">
+	  					<img src="screenshots/product8.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Apple Watch Sport 38mm Silver Aluminium Case</p>
+	  					<p class="product-color">WHITE</p>
+	  					<p class="product-price">$49.99</p>
+	  				</div>
+	  			</div>
+	  	
+
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product">
+	  					<img src="screenshots/product9.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Bose SoundLink On-Ear Headphones</p>
+	  					<p class="product-color">WHITE</p>
+	  					<p class="product-price">$119.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product">
+	  					<img src="screenshots/product10.jpg" class="img-responsive center-block">
+	  					<p class="product-name">Sonos Play-1 Wireless HiFi System</p>
+	  					<p class="product-color">BLACK</p>
+	  					<p class="product-price">$99.99</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-sm-4 col-lg-4">
+	  				<div class="background-product position-eleven padding-eleven">
+	  					<img src="screenshots/product11.jpg" id="heleven" class="img-responsive center-block">
+	  					<div class="product-position-eleven"><p class="product-name">Nest Learning Thermostat, 3rd Generation</p></div>
+	  					<div class="price-position-eleven"><p class="product-price-eleven">$49.99</p></div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  </div>
+	</div>
+</div>
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion, #accordion2'), false);
+});
+</script>
+
+<script type="text/javascript">
+	function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

@@ -259,6 +259,13 @@ border-bottom-right-radius: 7px;
 
 }
 
+li[l], li[m] {
+	float: left;
+}
+li[r] {
+	float: right;
+}
+
 	@media screen and (max-width: 768px) {
 		#filter {
 			text-transform: uppercase;
@@ -305,7 +312,7 @@ border-bottom-right-radius: 7px;
 <body>
 <div class="container">
 <ul id="filterbar">
-	<li><ul class="leftbar">
+	<li l><ul class="leftbar">
 		<li id="sort-by">
 				<p class="inline">sort by:</p>
 	  			<span class="inline" style="position:relative;" >
@@ -320,7 +327,24 @@ border-bottom-right-radius: 7px;
 		</li>
 	</ul></li>
 
-	<li><ul class="cetnrebar">
+	
+
+	<li r><ul class="rightbar">
+		<li id="ship-to">
+	  			<p class="inline">ship to:</p>
+	  			<span class="inline" style="position:relative;" >
+          		<span class="arrow" ></span>
+	  			<select>
+  					<option value="volvo">usa</option>
+  					<option value="saab">cambogia</option>
+  					<option value="opel">...</option>
+  					<option value="audi">...</option>
+				</select>
+				</span>
+	  		</li>
+	</ul></li>
+
+	<li m><ul class="cetnrebar">
 			<li class="inline left">
 	  			<form id="keyword">
   					Keywords
@@ -342,21 +366,6 @@ border-bottom-right-radius: 7px;
 	  				<input type="checkbox" id="fs1" name="fs"/>
 					<label for="fs1"><span></span>Free Shipping</label>
 				</div>
-	  		</li>
-	</ul></li>
-
-	<li><ul class="rightbar">
-		<li id="ship-to">
-	  			<p class="inline">ship to:</p>
-	  			<span class="inline" style="position:relative;" >
-          		<span class="arrow" ></span>
-	  			<select>
-  					<option value="volvo">usa</option>
-  					<option value="saab">cambogia</option>
-  					<option value="opel">...</option>
-  					<option value="audi">...</option>
-				</select>
-				</span>
 	  		</li>
 	</ul></li>
 </ul>
@@ -381,11 +390,11 @@ border-bottom-right-radius: 7px;
 		}
 	});
 	$(window).resize(function(){
-		if(window.innerWidth < 1200 && window.innerWidth > 768) {
-			$(".rightbar").insertAfter(".leftbar");
-		} else {
-			$(".rightbar").insertAfter(".cetnrebar");
-		}
+		// if(window.innerWidth < 1200 && window.innerWidth > 768) {
+		// 	$(".rightbar").insertAfter(".leftbar");
+		// } else {
+		// 	$(".rightbar").insertAfter(".cetnrebar");
+		// }
 	});
 </script>
 </html>

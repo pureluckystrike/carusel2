@@ -1,0 +1,390 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Responsive 3-Line Menu</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="df3.css"> -->
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	
+.inline{
+	display: inline;
+
+}
+.left{
+	float: left;
+}
+
+	body{
+		padding: 0px;
+		margin: 0 auto;
+	}
+
+	ul {
+		
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	
+	li:last-child {
+		border-right:none;
+	}
+
+		.leftbar{
+		height: 56px;
+border-top-left-radius: 7px;
+border-bottom-left-radius: 7px;
+		background-color: red;
+		float:left;
+	}
+
+	.cetnrebar{
+		height: 56px;
+		background-color: green;
+		float:left;
+		border-right: 1px solid #eee;
+
+	}
+
+	.rightbar{
+		height: 56px;
+		background-color: blue;
+		float:left;
+		border-right: 1px solid #eee;
+		border-top-right-radius: 7px;
+border-bottom-right-radius: 7px;
+	}
+
+
+
+	#sort-by{
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 2px solid #f2f2f2;
+	}
+
+#sort-by p{
+	color: #a1a8bd;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-right: 35px;
+	margin: 0px;
+	line-height: 56px;
+}
+
+#sort-by select{
+	border: 0px;
+	color: #343e5c;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-right: 5px;
+}
+
+.arrow{
+    cursor:pointer;
+    height:6px; 
+    width:10px;
+    position:absolute;
+    right:4px;
+    top: 4px;
+    background:url('screenshots/sortbyarrow.jpg');
+}
+
+
+
+#keyword{
+	font-family: "Montserrat";
+	color: #a1a8bd;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-left: 30px;
+	line-height: 56px;
+}
+
+#keyword-field{
+	width: 163px;
+	height: 32px;
+	border:1px solid #e3e8f0;
+	background-color: #f0f2f7;
+	border-radius: 50px;
+	color: #b9bfd3;
+	padding-left: 15px;
+	margin-left: 12px;
+	text-transform: capitalize;
+	font-family: "Montserrat";
+	font-size: 13px;
+}
+
+#price{
+	font-family: "Montserrat";
+	color: #a1a8bd;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-left: 30px;
+	line-height: 56px;
+}
+
+#min-price{
+	width: 64px;
+	height: 32px;
+	border:1px solid #e3e8f0;
+	background-color: #f0f2f7;
+	border-radius: 50px;
+	color: #b9bfd3;
+	padding-left: 15px;
+	margin-left: 12px;
+	text-transform: capitalize;
+	font-family: "Montserrat";
+	font-size: 13px;
+	margin-right: 4px;
+}
+
+#max-price{
+	width: 64px;
+	height: 32px;
+	border:1px solid #e3e8f0;
+	background-color: #f0f2f7;
+	border-radius: 50px;
+	color: #b9bfd3;
+	padding-left: 15px;
+	text-transform: capitalize;
+	font-family: "Montserrat";
+	font-size: 13px;
+	margin-left: 4px;
+}
+
+#free-shipping{
+	line-height: 56px;
+	font-family: "Montserrat";
+	color: #343e5c;
+	margin-right: 30px;
+}
+
+#free-shipping input[type="checkbox"] {
+    display:none;
+}
+
+#free-shipping input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: -2px 10px 0px 33px;
+    background:url(screenshots/checkboxfs.jpg) left top no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#free-shipping input[type="checkbox"]:checked + label span {
+    background:url(screenshots/checkedfs.jpg) top no-repeat;
+}
+
+
+
+
+
+
+#ship-to{
+	
+	height: 56px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border-left: 2px solid #f2f2f2;
+}
+
+#ship-to p{
+	color: #a1a8bd;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-right: 45px;
+	margin: 0px;
+	line-height: 56px;
+}
+
+#ship-to select{
+	border: 0px;
+	color: #343e5c;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-right: 5px;
+}
+
+.arrow{
+    cursor:pointer;
+    height:6px; 
+    width:10px;
+    position:absolute;
+    right:4px;
+    top: 4px;
+    background:url('screenshots/sortbyarrow.jpg');
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+.cetnrebar, .leftbar, .rightbar{
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.leftbar{
+	width: 247px;
+
+}
+
+.rightbar{
+	width: 228px;
+}
+
+.cetnrebar{
+		width:100%;
+
+}
+
+
+#sort-by{
+	border-right:none;
+	}
+
+}
+
+	@media screen and (max-width: 768px) {
+		#filter {
+			text-transform: uppercase;
+			display: block;
+			background: grey;
+			font-size:16px;
+			text-align: center;
+			color: #343e5c;
+			line-height: 56px;
+	font-family: "Montserrat";
+		}
+		#filterbar.dn {
+			display: none;
+		}
+	
+
+.cetnrebar, .leftbar, .rightbar{
+	width: 100%;
+	border-radius: 0px;
+}
+
+.cetnrebar{
+		height: 180px;
+	
+	}
+
+	.cetnrebar li{
+		display: block;
+		float: none;
+	}
+		
+	}
+
+	@media screen and (min-width: 768px) {
+		#filter {
+			display: none;
+
+		}
+	}
+
+	
+	</style>
+</head>
+<body>
+<div class="container">
+<ul id="filterbar">
+	<li><ul class="leftbar">
+		<li id="sort-by">
+				<p class="inline">sort by:</p>
+	  			<span class="inline" style="position:relative;" >
+          		<span class="arrow" ></span>
+	  			<select>
+  					<option value="volvo">best match</option>
+  					<option value="saab">...</option>
+  					<option value="opel">...</option>
+  					<option value="audi">...</option>
+				</select>
+				</span>
+		</li>
+	</ul></li>
+
+	<li><ul class="cetnrebar">
+			<li class="inline left">
+	  			<form id="keyword">
+  					Keywords
+  					<input id="keyword-field" type="search" name="keywords" placeholder="tablet">
+				</form>
+	  		</li>
+
+	  		<li class="inline left">
+	  			<form id="price">
+  					price
+  					<input id="min-price" type="text" name="min-price">
+  					-
+  					<input id="max-price" type="text" name="max-price">
+				</form>
+	  		</li>
+
+	  		<li class="inline left">
+	  			<div id="free-shipping">
+	  				<input type="checkbox" id="fs1" name="fs"/>
+					<label for="fs1"><span></span>Free Shipping</label>
+				</div>
+	  		</li>
+	</ul></li>
+
+	<li><ul class="rightbar">
+		<li id="ship-to">
+	  			<p class="inline">ship to:</p>
+	  			<span class="inline" style="position:relative;" >
+          		<span class="arrow" ></span>
+	  			<select>
+  					<option value="volvo">usa</option>
+  					<option value="saab">...</option>
+  					<option value="opel">...</option>
+  					<option value="audi">...</option>
+				</select>
+				</span>
+	  		</li>
+	</ul></li>
+</ul>
+</div>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+	$("#filterbar").addClass("dn").before('<div id="filter">filter</div>');
+	$("#filter").click(function(){
+		$("#filterbar").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#filterbar").removeAttr("style");
+		}
+	});
+	$(window).resize(function(){
+		if(window.innerWidth < 1200 && window.innerWidth > 768) {
+			$(".rightbar").insertAfter(".leftbar");
+		} else {
+			$(".rightbar").insertAfter(".cetnrebar");
+		}
+	});
+</script>
+</html>
